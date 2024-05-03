@@ -182,3 +182,13 @@ button {
     column-gap: 7px;
     padding-top: 40px;
 }
+
+.langChange__link {
+    transition: color 0.3s;
+}
+
+.langChange__link:hover,
+.langChange__link:active,
+.langChange__link:focus {
+    color: #7E7E82;
+}
