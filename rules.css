@@ -184,6 +184,7 @@ button {
 }
 
 .langChange__link {
+    color: #1B1C21;
     transition: color 0.3s;
 }
 
