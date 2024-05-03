@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <header>
+    <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="fonts/stylesheet.css">
         <link rel="stylesheet" href="rules.css">
-    </header>
-    <body class="indent__reset">
-
-        <aside class="menu menu__position-left">
-            <ul class="list menu__list">
-                <li class="list__el list__burger--active"></li>
-                <li class="list__el list__logo"></li>
-                <li class="list__el list__search"></li>
-            </ul>
-            <nav class="nav">
-                <ul class="list nav__list">
-                    <li><a href="" class="list__el">Ремонт техники</a></li>
-                    <li><a href="" class="list__el">Услуги и сервисы</a></li>
-                    <li><a href="" class="list__el">Корпоративным клиент</a></li>
-                    <li><a href="" class="list__el">Продавцам техники</a></li>
-                    <li><a href="" class="list__el">Партнерам</a></li>
-                    <li><a href="" class="list__el">Производителям</a></li>
-                    <li><a href="" class="list__el">Наши сервисные центры</a></li>
-                    <li><a href="" class="list__el">Контакты</a></li>
-                </ul>
-                <div class="nav__contacts contacts">
-                    <ul class="list contacts__list">
-                        <li class="list__el list__call"></li>
-                        <li class="list__el list__chat"></li>
-                        <li class="list__el list__profile"></li>
-                    </ul>
-                    <span class="contacts__mail">mail@cps.com</span>
-                    <span class="contacts__phoneNumber">8 800 890 8900</span>
+    </head>
+    <body>
+        <header class="header">
+            <button class="header__el header__button--burger--togled"></button>
+            <a class="header__el header__link--logo" href=""></a>
+            <button class="header__el header__button--search"></button>
+        </header>
+        <aside class="aside">
+            <nav class="nav aside__nav">
+                <a class="nav__el" href="">Ремонт техники</a>
+                <a class="nav__el" href="">Услуги и сервисы</a>
+                <a class="nav__el" href="">Корпоративным клиентам</a>
+                <a class="nav__el" href="">Продавцам техники</a>
+                <a class="nav__el" href="">Партнерам</a>
+                <a class="nav__el" href="">Производителям</a>
+                <a class="nav__el" href="">Наши сервисные центры</a>
+                <a class="nav__el" href="">Контакты</a>
+             </nav>
+            <footer class="footer aside__footer">
+                <nav class="nav footer__nav">
+                    <a class="nav__el nav__link--call" href=""></a>
+                    <a class="nav__el nav__link--chat" href=""></a>
+                    <a class="nav__el nav__link--profile" href=""></a>
+                </nav>
+                <address class="addres footer__addres">
+                    <a class="addres__mail" href="mail@cps.com">mail@cps.com</a>
+                    <a class="addres__tel" href="88008908900">8 800 890 8900</a>
+                </address>
+                <div class="langChange footer__langChange">
+                    <a class="langChange__link langChange__link--ru" href="">RU</a>
+                    <a class="langChange__link langChange__link--en" href="">EN</a>
+                    <a class="langChange__link langChange__link--ch" href="">CH</a>
                 </div>
-                <div class="nav__langBar langBar">
-                    <a href="" class="langBar__el langBar__toggle--ru">RU</a>
-                    <a href="" class="langBar__el langBar__toggle--en">EN</a>
-                    <a href="" class="langBar__el langBar__toggle--ch">CH</a>
-                </div>
-            </nav>
+            </footer>
         </aside>
-
     </body>
 </html>
