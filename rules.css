@@ -61,11 +61,11 @@ button {
 }
 
 
-.header__button--burger--togled {
+.header__el:first-child {
     background: no-repeat url('icons/burger_togled.svg');
 }
 
-.header__link--logo {
+.header__el:nth-child(2){
     display: inline-block;
     width: 97px;
     height: 51px;
@@ -74,13 +74,13 @@ button {
     margin-left: 16.73px;
 }
 
-.header__link--logo:focus,
-.header__link--logo:hover,
-.header__link--logo:active {
+.header__el:nth-child(2):focus,
+.header__el:nth-child(2):hover,
+.header__el:nth-child(2):active {
     transform: none;
 }
 
-.header__button--search {
+.header__el:last-child {
     background: no-repeat url('icons/search.svg');
 }
 
@@ -114,6 +114,7 @@ button {
 .aside__nav > .nav__el:focus,
 .aside__nav > .nav__el:active{
     color: #7E7E82;
+    text-decoration: none;
 } 
 
 
