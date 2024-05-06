@@ -13,53 +13,63 @@ html {
 
 body {
     margin: 0;
-    padding: 18.73px 24px 32px;
-    width: 320px;
-    box-shadow: 16px 0 52px #0E185033;
+    padding: 0;
 }
 
-a {
+a, 
+a:hover {
     text-decoration: none;
     color: #1B1C21;
     font-style: normal;
 }
 
 button {
+    margin: 0;
     padding: 0;
     border: none;
     font: inherit;
     color: inherit;
-    background-color: transparent;
-}
 
-/******************************************/
-
-/* head */
-
-.header {
-    display: flex;
-    align-items: center;
 }
 
 .header__el,
-.footer__nav > .nav__el {
+.footer__nav  .list__el {
+    display: block;
     width: 40px;
     height: 40px;
     transition: transform 0.3s;
 }
 
 .header__el:hover,
-.footer__nav > .nav__el:hover,
+.footer__nav  .list__el:hover,
 .header__el:focus,
-.footer__nav > .nav__el:focus {
+.footer__nav  .list__el:focus {
     transform: scale(108%);
 }
 
 .header__el:active,
-.footer__nav > .nav__el:active {
+.footer__nav  .list__el:active {
     transform: translate(0em, 0.25em)
 }
 
+.aside {
+    margin: 0;
+    padding: 18.73px 24px 32px;
+    width: 320px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 
+    16px 0 52px #0E185033,
+    -2px 0 4px #454F7E05;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+}
 
 .header__el:first-child {
     background: no-repeat url('icons/burger_togled.svg');
@@ -84,41 +94,39 @@ button {
     background: no-repeat url('icons/search.svg');
 }
 
-
-/******************************************/
-
-/* nav */
-
-.aside {
-    display: flex;
-    flex-direction: column;
-    row-gap: 268px;
+.aside__nav {
+    margin-top: 46.27px;
 }
 
-.nav {
+.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     display: flex;
+}
+
+.aside__list {
     flex-direction: column;
     row-gap: 32px;
-}
 
-.aside__nav {
     position: relative;
-    padding-top: 46.27px;
 }
 
-.aside__nav > .nav__el {
+.aside__list .list__el,
+.footer__langChange .list__el {
     transition: color 0.3s;
 }
 
-.aside__nav > .nav__el:hover,
-.aside__nav > .nav__el:focus,
-.aside__nav > .nav__el:active{
+.aside__list .list__el:hover,
+.aside__list .list__el:focus,
+.aside__list .list__el:active,
+.footer__langChange .list__el:hover,
+.footer__langChange .list__el:focus,
+.footer__langChange .list__el:active{
     color: #7E7E82;
-    text-decoration: none;
 } 
 
-
-.aside__nav > .nav__el::before {
+.aside__list .list__el::before {
     content: '';
     opacity: 0;
     position: absolute;
@@ -132,46 +140,42 @@ button {
     transition: opacity 0.3s;
 }
 
-.aside__nav > .nav__el:hover::before,
-.aside__nav > .nav__el:focus::before,
-.aside__nav > .nav__el:active::before {
+.aside__list .list__el:hover::before,
+.aside__list .list__el:focus::before,
+.aside__list .list__el:active::before {
     opacity: 1;
 }
 
-
-/******************************************/
-
-/* footer */
-
-.footer__nav {
-    display: flex;
-    column-gap: 16px;
-    flex-direction: row;
-    width: max-content;
-    padding-bottom: 10px;
+.aside__footer {
+    margin-top: 268px;
 }
 
-.nav__link--call {
+.footer__list {
+    display: flex;
+    column-gap: 16px;
+    width: max-content;
+}
+
+.footer__list li:first-child .list__el {
     background: no-repeat url('icons/call.svg');
 }
 
-.nav__link--chat {
+.footer__list li:nth-child(2) .list__el {
     background: no-repeat url('icons/chat.svg');
-
 }
 
-.nav__link--profile {
+.footer__list li:last-child .list__el {
     background: no-repeat url('icons/profile.svg');
-
 }
 
 .footer__addres {
     display: flex;
     flex-direction: column;
     row-gap: 12px;
+    margin-top: 10px;
 }
 
-.addres__tel {
+a[href="tel:88008908900"] {
     letter-spacing: -0.6px;
     font-size: 24px;
     line-height: 32px;
@@ -179,18 +183,8 @@ button {
 }
 
 .footer__langChange {
-    display: flex;
+    width: min-content;
     column-gap: 7px;
-    padding-top: 40px;
+    margin-top: 40px;
 }
 
-.langChange__link {
-    color: #1B1C21;
-    transition: color 0.3s;
-}
-
-.langChange__link:hover,
-.langChange__link:active,
-.langChange__link:focus {
-    color: #7E7E82;
-}
