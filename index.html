@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="fonts/stylesheet.css">
-        <link rel="stylesheet" href="rules.css">
-    </head>
-    <body>
-        <aside class="aside">
-            <header class="header">
-                <button class="header__el"></button>
-                <a class="header__el" href=""></a>
-                <button class="header__el"></button>
-            </header>
-            <nav class="aside__nav">
-                <ul class="list aside__list">
-                    <li><a class="list__el" href="">Ремонт техники</a></li>
-                    <li><a class="list__el" href="">Услуги и сервисы</a></li>
-                    <li><a class="list__el" href="">Корпоративным клиентам</a></li>
-                    <li><a class="list__el" href="">Продавцам техники</a></li>
-                    <li><a class="list__el" href="">Партнерам</a></li>
-                    <li><a class="list__el" href="">Производителям</a></li>
-                    <li><a class="list__el" href="">Наши сервисные центры</a></li>
-                    <li><a class="list__el" href="">Контакты</a></li>
-                </ul>
-            </nav>
-            <footer class="aside__footer">
-                <nav class="footer__nav">
-                    <ul class="list footer__list">
-                        <li><button class="list__el" href=""></button></li>
-                        <li><button class="list__el" href=""></button></li>
-                        <li><button class="list__el" href=""></button></li>
-                    </ul>
-                </nav>
-                <address class="footer__addres">
-                    <a href="mailto:mail@cps.com">mail@cps.com</a>
-                    <a href="tel:88008908900">8 800 890 8900</a>
-                </address>
-                <ul class="list footer__langChange">
-                    <li><a class="list__el" href="">RU</a></li>
-                    <li><a class="list__el" href="">EN</a></li>
-                    <li><a class="list__el" href="">CH</a></li>
-                </ul>
-            </footer>
-        </body>
-    </aside>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="rules.css">
+</head>
+<body>
+    <aside class="aside">
+        <header class="header">
+            <button class="button">
+                <img class="button__img" src="/icons/burger_togled.svg" alt="Кнопка меню">
+            </button>
+            <a class="logo header__logo" href="">
+                <img class="logo__img" src="/imgs/Group.svg" alt="Лого фирмы">
+            </a>
+            <button class="button">
+                <img class="button__img" src="icons/search.svg" alt="Поиск">
+            </button>
+        </header>
+        <nav class="nav aside__nav">
+            <ul class="nav__list">
+                <li><a class="nav__link" href="">Ремонт техники</a></li>
+                <li><a class="nav__link" href="">Услуги и сервисы</a></li>
+                <li><a class="nav__link" href="">Корпоративным клиентам</a></li>
+                <li><a class="nav__link" href="">Продавцам техники</a></li>
+                <li><a class="nav__link" href="">Партнерам</a></li>
+                <li><a class="nav__link" href="">Производителям</a></li>
+                <li><a class="nav__link" href="">Наши сервисные центры</a></li>
+                <li><a class="nav__link" href="">Контакты</a></li>
+            </ul>
+        </nav>
+        <footer class="footer aside__footer">
+            <ul class="footer__buttonList">
+                <li><button class="button">
+                    <img class="button__img" src="/icons/call.svg" alt="Заказать звонок">
+                </button></li>
+                <li><button class="button">
+                    <img class="button__img" src="icons/chat.svg" alt="Обратная связь">
+                </button></li>
+                <li><button class="button">
+                    <img class="button__img" src="icons/profile.svg" alt="">
+                </button></li>
+            </ul>
+            <address class="address footer__address">
+                <a class="mail" href="mailto:mail@cps.com">mail@cps.com</a>
+                <a class="tel" href="tel:88008908900">8 800 890 8900</a>
+            </address>
+            <ul class="lang footer__langList">
+                <li><a class="lang__el" href="">RU</a></li>
+                <li><a class="lang__el" href="">EN</a></li>
+                <li><a class="lang__el" href="">CH</a></li>
+            </ul>
+        </footer>
+    </body>
+</aside>
 </html>
